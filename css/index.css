@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background: url("../images/nav_bg.png") repeat-x;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:#333
+}
+.content{
+    width: 1000px;
+    height: 170px;
+    margin: 0 auto;
+
+}
+.bgNav{
+    float: left;
+    line-height: 150px;
+    margin: 0 auto;
+}
+.shouye{
+    float: left;
+    margin-left: 20px;
+    width: 400px;
+    height: 120px;
+}
+.shouye li{
+    float: left;
+    line-height: 97px;
+    font-size: 20px;
+    padding: 10px 20px;
+
+}
+.shouye li:hover{
+    background-color: #00a4ff;
+}
+.zhu{
+    float: right;
+    margin-top: 38px;
+    height: 20px;
+    width: 50px;
+    line-height: 20px;
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: #00a4ff;
+    border-radius: 20px;
+text-align: center;
+}
+.deng li{
+    float: right;
+    margin-left: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    text-shadow: 0 0 1px;
+    height: 40px;
+}
+.other {
+    margin-top: 20px;
+    height: 120px;
+    /*line-height: 120px;*/
+    float: right;
+}
+.other p{
+    float: right;
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.down{
+    overflow: hidden;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    background: url("../images/banner-bg.jpg") no-repeat ;
+}
+.down ul{
+    margin-top: 170px;
+}
+.down ul li{
+    margin-top: 40px;
+    text-align: center;
+}
+.girl h1{
+    height: 300px;
+    background: url("../images/sound-text.png");
+    text-indent: -10000px;
+    overflow: hidden;
+}
+.girl .bg{
+    height: 1000px;
+    background: url("../images/sound-bg.jpg") no-repeat center/cover;
+}
+.girl .w1{
+    height: 562px;
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+.girl .phone{
+    position: absolute;
+    top:-200px;
+    left: -150px;
+    z-index: 1;
+    height: 763px;
+    width: 100%;
+    background: url("../images/sound-phone.png") no-repeat top;
+}
+.girl .text{
+    float: right;
+    width: 500px;
+}
+.girl .text p{
+    width: 500px;
+    float: right;
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: right;
+}
+.hand .bg{
+    height: 1000px;
+    background: url("../images/file-bg.jpg") no-repeat center/cover;
+}
+.hand .w2{
+    height: 400px;
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+.hand .mac{
+    position: absolute;
+    top:50px;
+    left: 450px;
+    z-index: 1;
+    height: 330px;
+    width: 597px;
+    background: url("../images/file-mac.png") no-repeat top;
+}
+.hand .text{
+    float: left;
+    width: 500px;
+}
+.hand .text p{
+    width: 500px;
+    float: left;
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: left;
+}
+.bike .bg{
+    height: 1000px;
+    background: url("../images/interest-bg.jpg") no-repeat center/cover;
+}
+.bike .w3{
+    height: 506px;
+    width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+.bike .bike{
+    position: absolute;
+    top:0px;
+    left: -300px;
+    z-index: 1;
+    height: 763px;
+    width: 100%;
+    background: url("../images/interest-phone.png") no-repeat top;
+}
+.bike .text{
+    float: right;
+    width: 500px;
+}
+.bike .text p{
+    width: 500px;
+    float: right;
+    margin-top: 60px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: right;
+}
+footer{
+    background-color:#2a2a2a ;
+    height: 300px;
+}
+footer ul{
+    /*margin-left: 90px;*/
+    /*margin-top: 30px;*/
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+footer ul li{
+    background: url("../images/footer.png") -5px 0 ;
+    text-align: center;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin:80px 50px 0;
+    color: #666;
+}
+footer span{
+    display: inline-block;
+    text-align: center;
+    line-height:120px ;
+    font-size: 12px;margin-top: 10px;
+}
+footer .text{
+    width: 600px;
+    text-align: center;
+    margin: 50px auto 0;
+}
+footer .text p{
+    text-align: center;
+    color:#666;
+    font-size:14px;
+}
+.main .bg {
+    background-attachment: fixed;
+}
