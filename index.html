@@ -2,88 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/index.css">
-    <script src=""></script>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,width=device-width">
+    <title>Andy_photography</title>
+    <link rel="shortcut icon" href="photos/icon.jpg">
+    <!--兼容IE9及以下浏览器的媒体查询和HTML5标签-->
     <!--[if lt IE 9]-->
-    <script src="js/html5shiv.min.js"></script>
+    <script src="lib/html5shiv.min.js"></script>
+    <script src="lib/respond.min.js"></script>
     <!--[endif]-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.stellar.js"></script>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/iconfont.css"><!--微博，微信图标-->
 </head>
 <body>
-<div class="main">
-    <nav>
-        <div class="content">
-            <a class="bgNav" href="#"><img src="images/nav_brand.png" alt=""></a>
-            <ul class="shouye">
-                <li>首页</li>
-                <li>下载</li>
-                <li>动态</li>
-            </ul>
-            <div class="other">
-                <ul class="deng">
-                    <li>登录</li>
-                    <li>qq会员</li>
-                    <li>qq安全</li>
-                </ul>
-                <p>当前在线人数：227,763,015</p>
-            </div>
-            <a class="zhu" href="#">注册</a>
+<header>
+    <div class="info">
+        <div class="left col-md-9">
+            <img src="photos/per.jpg" class="">
+            <span class="">Andy</span>
+            <span class="glyphicon glyphicon-phone hidden-xs">13631297334</span><!--当屏幕距离小于750时隐藏手机信息-->
+            <span class="glyphicon glyphicon-envelope hidden-xs">986249154@qq.com</span><!--当屏幕距离小于750时隐藏邮箱信息-->
         </div>
-    </nav>
-    <section class="down">
-        <ul>
-            <li><img src="images/banner-logo.png" alt=""></li>
-            <li><img src="images/banner-download.png" alt=""></li>
-            <li><img src="images/banner-list.png" alt=""></li>
-            <li><img src="images/banner-product.png" width="100%" alt=""></li>
-        </ul>
-    </section>
-    <section class="girl">
-        <h1>I'm QQ - 每一天，乐在沟通</h1>
-        <div class="bg" data-stellar-background-ratio="0.5"></div>
-        <div class="w1">
-            <div class="phone"></div>
-            <div class="text">
-                <p>沟通，是跨越<br>千山万水的亲切声音</p>
-                <p>无论何时何地，你都能自由享受QQ在各类<br>终端上带来的高清通话，与好友一起想聊多久聊多久</p>
-            </div>
+        <div class="right col-md-3">
+            <img src="photos/erweima.jpg" class="erweima">
+            <span id="we" class="iconfont icon-weixin hidden-xs"></span>
+            <!--当屏幕距离小于750时隐藏微信二维码信息-->
+            <a target="_blank" href="https://weibo.com/u/2546995420" class="iconfont icon-weibo "></a>
         </div>
-    </section>
-    <section class="hand">
-        <div class="bg" data-stellar-background-ratio="0.5"></div>
-        <div class="w2">
-            <div class="mac"></div>
-            <div class="text">
-                <p>沟通，是随时随地<br>爽快收发</p>
-                <p>通过QQ,电脑和手机上的文件都能收发自如，<br>更有手机在线查阅，轻松你的工作和生活。</p>
+    </div>
+</header>
+<!--头部-->
+<div class="banner">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href=""><img src="photos/banner/1.jpg" onclick="window.open('https://qiniu-xpc0.xpccdn.com/5b0396eac1c84.mp4')"></a>
+                <div class="carousel-caption">
+                    <h3>...</h3>
+                    <p>...</p>
+                </div>
             </div>
-    </section>
-    <section class="bike">
-        <div class="bg" data-stellar-background-ratio="0.5"></div>
-        <div class="w3">
-            <div class="bike"></div>
-            <div class="text">
-                <p>沟通，是志同道合<br>的他们放肆青春</p>
-                <p>即使世界很大，你也不会孤单，在兴趣部落<br>有和你一样的人，期待着和你一起发现精彩。</p>
+            <div class="item">
+                <a href=""><img src="photos/banner/2.jpg" onclick="window.open('https://qiniu-xpc0.xpccdn.com/5954a5e5a86c6.mp4')"></a>
+                <div class="carousel-caption">
+                    <h3>...</h3>
+                    <p>...</p>
+                </div>
             </div>
-    </section>
-    <footer>
-        <div class="foot">
-            <ul>
-                <li><span>QQ手机版</span></li>
-                <li><span>QQPC版</span></li>
-                <li><span>QQMAC版</span></li>
-                <li><span>QQPAD版</span></li>
-            </ul>
-            <div class="text">
-                <p>Copyright © 1998- 2017 Tencent. All Rights Reserved.</p>
-                <p>腾讯公司 版权所有</p>
+            <div class="item">
+                <a href="javascript:;" target="_blank" onclick="window.open('https://qiniu-xpc0.xpccdn.com/5954a5e5a86c6.mp4')">
+                   <img src="photos/banner/3.jpg" alt=""></a>
+                <div class="carousel-caption">
+                    <h3>...</h3>
+                    <p>...</p>
+                </div>
             </div>
         </div>
-    </footer>
+        <a class="left carousel-control hidden-xs" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a><!--当屏幕距离小于750时隐藏左滑动图标-->
+        <a class="right carousel-control hidden-xs" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a><!--当屏幕距离小于750时隐藏右滑动图标-->
+    </div>
 </div>
+<!--轮播图-->
+<nav>
+    <div>
+        <span>关于旅行</span>
+        <span>关于人物</span>
+        <span>一风一景</span>
+    </div>
+</nav>
+<!--导航-->
+<footer></footer>
+<!--底部-->
+<script src="lib/jquery-1.12.1.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

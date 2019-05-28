@@ -1,0 +1,55 @@
+/*初始化css*/
+/*使用标签名字的效率远远高于*的效率*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6,img {
+    margin: 0;
+    padding: 0;
+}
+/*各浏览器显示不同，去掉蓝色边框*/
+img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;/*设置轮廓样式*/
+}
+ul, ol {
+    list-style: none;
+}
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+/*防止拖动 影响布局*/
+textarea {
+    resize: none;
+}
+/*去掉行内替换元素空白缝隙*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53"; /*宋体 unicode */
+    color: #666;
+    /*background: #f6f6f6;*/
+}
+/*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+a,a:hover,a:active,a:visited{
+    color: #CCCCCC;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
