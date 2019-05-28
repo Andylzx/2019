@@ -54,6 +54,10 @@ header .info .right{
     header .info img:first-child{
         width: 30px;
     }
+    header .info .left{
+        bottom: 15px;
+        left: 10px;
+    }
     header .info .right{
         bottom: 30px;
     }
