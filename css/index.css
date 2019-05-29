@@ -38,7 +38,8 @@ header .info .right{
     padding: 3px;
 }
 .erweima{
-    display: none;
+    display:block;
+    width: 100px;
 }
 /*头部*/
 .banner .carousel-inner a img{
@@ -47,6 +48,136 @@ header .info .right{
 .carousel-indicators li{
     margin: 1px 5px;
 }
+.carousel-caption {
+    font-size: 16px;
+    color:rgba(255,255,255,0.7);
+    text-align:right;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .8);
+}
+/*导航*/
+.nav > li {
+    display:inline-block;
+    padding: 0 30px;
+}
+.nav > li > a {
+    font-size: 14px;
+    padding:0 ;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+.nav-tabs {
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom:none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.nav-tabs > li {
+    height: 60px;
+    line-height: 60px;
+    float: none;
+    margin-bottom:0;
+}
+.nav-tabs > li > a {
+    color:rgba(0,0,0,.3);
+    margin-right: 2px;
+    line-height: 60px;
+    border: 1px transparent solid;
+}
+.nav-tabs > li > a:hover {
+    border-color:transparent;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: rgba(0,0,0,1);
+    background-color:transparent;
+    border: 1px solid transparent;
+    border-bottom: #c9a610 3px solid;
+}
+.tab-content{
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+.tab-content .tab-pane{
+    width: 100%;
+    text-align: center;
+}
+.tab-content .tab-pane img{
+    width: 80%;
+    margin: 20px 0;
+    box-shadow:0px 5px 5px rgba(0, 0, 0, 0.6);
+}
+.tab-content .tab-pane img:hover{
+    transform: translateY(-5px);
+    box-shadow:0px 5px 10px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ;
+}
+.tab-pane.per{
+    text-align: center;
+}
+.tab-pane.per a{
+    display: inline-block;
+    width: 45%;
+    margin: 0px 2%;
+}
+.tab-pane.per img{
+    width: 100%;
+    box-shadow:5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+#scenery img{
+    display: inline-block;
+    width: 30%;
+    margin: 10px 1%;
+}
+.end{
+    margin: 40px auto;
+    display: block;
+}
+/*图片内容*/
+footer{
+    margin: 0px auto;
+    width: 100%;
+    background-color: #2a2a2a;
+}
+footer ul{
+    text-align: center;
+}
+footer ul li{
+    display: inline-block;
+    margin: 30px;
+}
+footer ul li img{
+    width: 100px;
+}
+footer ul li p{
+    line-height: 20px;
+    height: 30px;
+    color: #ccc;
+}
+.love{
+    font-size: 20px;
+}
+footer>p{
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+footer>a{
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.glyphicon-open:before{
+    font-size: 30px;
+    position: fixed;
+    bottom: 70px;
+    right: 5px;
+    color: rgba(0,0,0,.5);
+}/*返回顶部小按钮*/
 @media (max-width:750px) {
     header{
         height: 150px;
@@ -71,6 +202,44 @@ header .info .right{
         width: 9px;
         height: 9px;
     }
+    .carousel-caption{
+        margin-bottom: -20px;
+    }
+    .carousel-caption h3{
+        font-size: 16px;
+    }
+    .carousel-caption p{
+        font-size: 50%;
+    }
+    .nav > li {
+        padding: 0 10px;
+    }
+    .nav > li > a {
+        font-size: 12px;
+    }
+    .nav-tabs > li {
+        height: 35px;
+        line-height: 35px;
+    }
+    .nav-tabs > li > a {
+        color:rgba(0,0,0,.4);
+        line-height:35px;
+    }
+    .nav-tabs > li > a.active{
+        border-bottom: #c9b013 2px solid;
+    }
+    footer ul li{
+        margin: 15px;
+    }
+    footer ul li img{
+        width: 60px;
+    }
+    .love{
+        font-size: 14px;
+    }
+    .glyphicon-open:before{
+        display: none;
+    }/*隐藏返回顶部小按钮*/
 }/*小屏设备时背景图的高度*/
 @media (min-width: 1200px) {
     header{
