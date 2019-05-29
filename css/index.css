@@ -166,15 +166,11 @@ footer>p{
     text-align: center;
     padding-bottom: 10px;
 }
-footer>a{
+.glyphicon-open.top{
     display: block;
-    width: 30px;
-    height: 30px;
-}
-.glyphicon-open:before{
     font-size: 30px;
     position: fixed;
-    bottom: 70px;
+    top: 80%;
     right: 5px;
     color: rgba(0,0,0,.5);
 }/*返回顶部小按钮*/
