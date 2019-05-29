@@ -38,6 +38,9 @@ header .info .right{
     padding: 3px;
 }
 .erweima{
+    position: absolute;
+    right: 0;
+    top: -110px;
     display:block;
     width: 100px;
 }
