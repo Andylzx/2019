@@ -233,7 +233,7 @@ footer>p{
 }
 .render_li div{
     position: relative;
-    margin:5% auto;
+    margin:4% auto;
     height: 90%;
     max-height: 720px;
     background: no-repeat center center/contain;
@@ -338,8 +338,8 @@ footer>p{
     }
 }
 @media (min-width: 375px) {
-    .glyphicon-chevron-right{
-        top:60% !important;
+    .glyphicon-chevron-right,.glyphicon-chevron-left{
+        top:65% !important;
     }
 }
 @media (min-width: 1200px) {
