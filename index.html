@@ -17,116 +17,153 @@
     <link rel="stylesheet" href="font/iconfont.css"><!--微博，微信图标-->
 </head>
 <body>
-<header>
-    <div class="info">
-        <div class="left col-md-9">
-            <img src="photos/per.jpg" class="">
-            <span class="">Andy</span>
-            <span class="hidden-xs hidden-sm hidden-md">广东·广州</span>
-            <span class="glyphicon glyphicon-phone hidden-xs">13631297334</span><!--当屏幕距离小于750时隐藏手机信息-->
-            <span class="glyphicon glyphicon-envelope hidden-xs">986249154@qq.com</span><!--当屏幕距离小于750时隐藏邮箱信息-->
+<div class="main">
+    <header class="">
+        <div class="info">
+            <div class="left col-md-9">
+                <img src="photos/per.jpg" class="">
+                <span class="">Andy</span>
+                <span class="hidden-xs hidden-sm hidden-md">广东·广州</span>
+                <span class="glyphicon glyphicon-phone hidden-xs">13631297334</span><!--当屏幕距离小于750时隐藏手机信息-->
+                <span class="glyphicon glyphicon-envelope hidden-xs">986249154@qq.com</span><!--当屏幕距离小于750时隐藏邮箱信息-->
+            </div>
+            <div class="right col-md-3">
+                <img src="photos/weixin.jpg" class="erweima">
+                <span id="we" class="iconfont icon-weixin hidden-xs"></span>
+                <!--当屏幕距离小于750时隐藏微信二维码信息-->
+                <a target="_blank" href="https://weibo.com/u/2546995420" class="iconfont icon-weibo "></a>
+            </div>
         </div>
-        <div class="right col-md-3">
-            <img src="photos/weixin.jpg" class="erweima">
-            <span id="we" class="iconfont icon-weixin hidden-xs"></span>
-            <!--当屏幕距离小于750时隐藏微信二维码信息-->
-            <a target="_blank" href="https://weibo.com/u/2546995420" class="iconfont icon-weibo "></a>
+    </header>
+    <!--头部-->
+    <div class="banner">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <a href="" onclick="window.open('https://qiniu-xpc10.xpccdn.com/5b0396eac1c84.mp4')"><img src="photos/banner/1.jpg"></a>
+                    <div class="carousel-caption">
+                        <h3>盛夏马来</h3>
+                        <p>2018.05</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="" onclick="window.open('https://qiniu-xpc10.xpccdn.com/5ced5f781cfbb.mp4')"><img src="photos/banner/2.jpg"></a>
+                    <div class="carousel-caption">
+                        <h3>川滇之冬</h3>
+                        <p>2017.01</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="javascript:;" target="_blank" onclick="window.open('https://qiniu-xpc10.xpccdn.com/5954a5e5a86c6.mp4')"><img src="photos/banner/3.jpg"></a>
+                    <div class="carousel-caption">
+                        <h3>海港风情</h3>
+                        <p>2016.02</p>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control hidden-xs" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a><!--当屏幕距离小于750时隐藏左滑动图标-->
+            <a class="right carousel-control hidden-xs" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a><!--当屏幕距离小于750时隐藏右滑动图标-->
         </div>
     </div>
-</header>
-<!--头部-->
-<div class="banner">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active">
-                <a href=""><img src="photos/banner/1.jpg" onclick="window.open('https://qiniu-xpc0.xpccdn.com/5b0396eac1c84.mp4')"></a>
-                <div class="carousel-caption">
-                    <h3>盛夏马来</h3>
-                    <p>2018.05</p>
-                </div>
+    <!--轮播图-->
+    <nav>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#people" data-toggle="tab">关于人物</a></li>
+            <li><a href="#travel" data-toggle="tab">关于旅行</a></li>
+            <li><a href="#scenery" data-toggle="tab">一风一景</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane active per" id="people">
+                <a href="javascript:;" data-index="4"><img src="photos/04/small.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/05/smalll.jpg" width="400" alt=""></a>
+                <a href="javascript:;"><img src="photos/06/small.jpg"  alt=""></a>
+                <a href="javascript:;"><img src="photos/07/small.jpg"  alt=""></a>
+                <a href="javascript:;"><img src="photos/08/small.jpg"  alt=""></a>
+                <a href="javascript:;"><img src="photos/09/small.jpg"  alt=""></a>
             </div>
-            <div class="item">
-                <a href=""><img src="photos/banner/2.jpg" onclick="window.open('https://qiniu-xpc0.xpccdn.com/5954a5e5a86c6.mp4')"></a>
-                <div class="carousel-caption">
-                    <h3>川滇之冬</h3>
-                    <p>2017.01</p>
-                </div>
+            <div class="tab-pane" id="travel">
+                <a href="javascript:;"><img src="photos/01/small.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/02/small.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/03/small.jpg" alt=""></a>
             </div>
-            <div class="item">
-                <a href="javascript:;" target="_blank" onclick="window.open('https://qiniu-xpc0.xpccdn.com/5954a5e5a86c6.mp4')">
-                   <img src="photos/banner/3.jpg" alt=""></a>
-                <div class="carousel-caption">
-                    <h3>海港风情</h3>
-                    <p>2016.02</p>
-                </div>
+            <div class="tab-pane" id="scenery">
+                <a href="javascript:;"><img src="photos/10/small/1.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/10/small/2.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/10/small/3.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/10/small/4.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/10/small/5.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/10/small/6.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/10/small/7.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/10/small/8.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/10/small/9.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/10/small/10.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/10/small/11.jpg" alt=""></a>
+                <a href="javascript:;"><img src="photos/10/small/12.jpg" alt=""></a>
             </div>
+            <img class="end" src="photos/end.png" alt="">
         </div>
-        <a class="left carousel-control hidden-xs" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a><!--当屏幕距离小于750时隐藏左滑动图标-->
-        <a class="right carousel-control hidden-xs" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a><!--当屏幕距离小于750时隐藏右滑动图标-->
-    </div>
+    </nav>
+    <!--导航-->
+    <footer>
+        <ul>
+            <li><p>我的图虫</p><img src="photos/tuchong.png" alt=""></li>
+            <li><p>我的新片场</p><img src="photos/xpc.png" alt=""></li>
+            <li><p class="love">爱摄影，爱生活</p></li>
+        </ul>
+        <p>Copyright © 2019 Andy All Rights Reserved.</p>
+        <a href="javascript:;" class="glyphicon glyphicon-open top"></a>
+    </footer>
+    <!--底部-->
 </div>
-<!--轮播图-->
-<nav>
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="#people" data-toggle="tab">关于人物</a></li>
-        <li><a href="#travel" data-toggle="tab">关于旅行</a></li>
-        <li><a href="#scenery" data-toggle="tab">一风一景</a></li>
-    </ul>
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div class="tab-pane active per" id="people">
-            <a href="javascript:;"><img src="photos/04/small.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/05/smalll.jpg" width="400" alt=""></a>
-            <a href="javascript:;"><img src="photos/06/small.jpg"  alt=""></a>
-            <a href="javascript:;"><img src="photos/07/small.jpg"  alt=""></a>
-            <a href="javascript:;"><img src="photos/08/small.jpg"  alt=""></a>
-            <a href="javascript:;"><img src="photos/09/small.jpg"  alt=""></a>
-        </div>
-        <div class="tab-pane" id="travel">
-            <a href="javascript:;"><img src="photos/01/small.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/02/small.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/03/small.jpg" alt=""></a>
-        </div>
-        <div class="tab-pane" id="scenery">
-            <a href="javascript:;"><img src="photos/10/small/1.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/10/small/2.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/10/small/3.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/10/small/4.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/10/small/5.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/10/small/6.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/10/small/7.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/10/small/8.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/10/small/9.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/10/small/10.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/10/small/11.jpg" alt=""></a>
-            <a href="javascript:;"><img src="photos/10/small/12.jpg" alt=""></a>
-        </div>
-        <img class="end" src="photos/end.png" alt="">
-    </div>
-</nav>
-<!--导航-->
-<footer>
-<ul>
-    <li><p>我的图虫</p><img src="photos/tuchong.png" alt=""></li>
-    <li><p>我的新片场</p><img src="photos/xpc.png" alt=""></li>
-    <li><p class="love">爱摄影，爱生活</p></li>
-</ul>
-    <p>Copyright © 2019 Andy All Rights Reserved.</p>
-    <a href="javascript:;" class="glyphicon glyphicon-open top"></a>
-</footer>
-<!--底部-->
+<div class="mask"></div>
+<div class="render"></div>
 <script src="lib/jquery-1.12.1.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/template-web.js"></script>
 <script src="js/index.js"></script>
+<script id="template" type="text/html">
+    <%%>
+    <a href="javascript:close()" class="glyphicon glyphicon-remove"></a>
+        <ul class="render_ul" style="width: <%=list[index].img.length*100%>%">
+            <% for(var i=0 ; i<list[index].img.length ; i++){ %>
+            <li class="render_li" style="width: <%=100/list[index].img.length%>%"  >
+                <div style="background-image:url(<%=list[index].img[i]%>)">
+                    <span class="number">共 <%=list[index].img.length%> 张  第 <%=i+1%> 张</span>
+                </div>
+            </li>
+            <%}%>
+        </ul>
+        <a class="left carousel-control" href="javascript:left()">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a><!--当屏幕距离小于750时隐藏左滑动图标-->
+        <a class="right carousel-control" href="javascript:right()">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a><!--当屏幕距离小于750时隐藏右滑动图标-->
+    <%%>
+</script>
+<script id="template-scenery" type="text/html">
+    <%%>
+    <a href="javascript:close()" class="glyphicon glyphicon-remove"></a>
+    <ul class="render_ul" style="width: <%=list[index].img.length*100%>%">
+        <% for(var i=0 ; i<list[index].img.length ; i++){ %>
+        <li class="render_li" style="width: <%=100/list[index].img.length%>%"  >
+            <div style="background-image:url(<%=list[index].img[i]%>)">
+                <span class="number">共 <%=list[index].img.length%> 张  第 <%=i+1%> 张</span>
+            </div>
+        </li>
+        <%}%>
+    </ul>
+</script>
 </body>
 </html>
