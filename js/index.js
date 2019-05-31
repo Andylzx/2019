@@ -11,7 +11,7 @@ $(document).ready(function () {
     $('.carousel-inner').on('touchmove', function (e) {
         endX = e.originalEvent.touches[0].clientX;//当触摸离开时的x坐标；
     });
-    $('.carousel-inner').on('touchend', function (e) {
+    $('.carousel-inner').on('touchend', function () {
         //当触摸完成时进行的事件；
         var distance = Math.abs(startX - endX);//不论正负，取值为正值；
         if (distance > offset) {
@@ -26,14 +26,42 @@ $(document).ready(function () {
     //鼠标进入微信图标的时候显示二维码，离开的时候隐藏二维码
     $("#we").parent().find("img").hide();//二维码默认为隐藏
     $("#we").mouseenter(function () {
-        $(this).parent().find("img").show()
+        $(this).parent().find("img").show()//鼠标进入的时候显示
     }).mouseleave(function () {
-        $(this).parent().find("img").hide()
+        $(this).parent().find("img").hide()//鼠标离开的时候隐藏
     });
     $(".top").hide();//返回顶部按钮默认隐藏
+    render();//页面刷新的时候先检查一下那些在浏览器内的img可以渲染
+    //检查目标img距离顶部的距离是否大于页面向上卷曲的距离同时小于页面向上卷曲的距离加浏览器的高度
+    function checkShow($img) {
+        var scrollTop=$(window).scrollTop();//页面向上卷曲的距离
+        var windowHeight=$(window).height();//浏览器的高度
+        var offsetTop=$img.offset().top;//目标img距离顶部的距离
+        if(offsetTop<(windowHeight+scrollTop) && offsetTop>scrollTop){
+            return true;//同时则返回true
+        }
+        return false;
+    }
+    //判断目标img是否已经加载
+    function isLoaded($img) {
+        return $img.attr("data-src")===$img.attr("src");
+    }
+    //目标img已经被加载,将data-src的值赋给src
+    function loadImg($img) {
+        $img.attr("src",$img.attr("data-src"));
+    }
+    //判断以上两个函数条件是否成立，成立则将data-src的值赋给目标img
+    function render() {
+        $("img").each(function () {
+            if(checkShow($(this))&&!isLoaded($(this))){
+                loadImg($(this))
+            }
+        });
+    }
 
     //给浏览器注册滚动事件，监听卷曲出去的距离
     $(window).scroll(function () {
+            render();//滚动的时候监听目标img与浏览器滚动的距离并决定是否执行函数
         var scrollY=$(window).scrollTop();//卷曲出去的距离
         var height=$("header").height()+$(".banner").height();//头部加轮播图的高度
         if(scrollY>height){
