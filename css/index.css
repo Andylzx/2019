@@ -337,6 +337,11 @@ footer>p{
         padding-top:50px;
     }
 }
+@media (min-width: 375px) {
+    .glyphicon-chevron-right{
+        top:60% !important;
+    }
+}
 @media (min-width: 1200px) {
     header{
         height: 400px;
