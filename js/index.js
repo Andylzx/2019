@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("nav").find(".nav-tabs").on("click",function () {
         setTimeout(function () {
             render();
-        },10)//点击每个版块之后执行render函数判断是否需要渲染图片
+        },100)//点击每个版块之后执行render函数判断是否需要渲染图片
     });
     //初始化轮播图，定时2S自动滑动
     $('.carousel').carousel({
