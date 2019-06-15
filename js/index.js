@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    $("nav").find(".nav-tabs").on("click",function () {
+        setTimeout(function () {
+            render();
+        },10)//点击每个版块之后执行render函数判断是否需要渲染图片
+    });
     //初始化轮播图，定时2S自动滑动
     $('.carousel').carousel({
         interval: 2000,
@@ -59,9 +64,13 @@ $(document).ready(function () {
         });
     }
 
+
     //给浏览器注册滚动事件，监听卷曲出去的距离
     $(window).scroll(function () {
-            render();//滚动的时候监听目标img与浏览器滚动的距离并决定是否执行函数
+        setTimeout(function () {
+            render();
+        },300);
+        //滚动的时候监听目标img与浏览器滚动的距离并决定是否执行函数
         var scrollY=$(window).scrollTop();//卷曲出去的距离
         var height=$("header").height()+$(".banner").height();//头部加轮播图的高度
         if(scrollY>height){
@@ -84,6 +93,7 @@ $(document).ready(function () {
 
     //点击关于人物的小图，从json文本里请求数据并渲染到页面中
    $("#people").find("a").click(function () {
+       $(window).css("position","fixed");
         var id=$(this).index();//定义一个变量获取点击的a标签的索引值
        $(".mask").fadeIn(200);
        $(".render").fadeIn(200);//点击小图的时候遮罩和页面主体显示出来
@@ -167,7 +177,7 @@ $(document).ready(function () {
             type:"get",
             success:function (data) {
                 var img=template("template-scenery",{list:data,index:id});
-                $(".render").prepend(img);
+                $(".render").append(img)
             }
         });
     });
