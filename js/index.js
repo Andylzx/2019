@@ -90,7 +90,6 @@ $(document).ready(function () {
         $(".render").css("display","none").empty();
         $(".mask").css("display","none");
     };
-
     //点击关于人物的小图，从json文本里请求数据并渲染到页面中
    $("#people").find("a").click(function () {
        $(window).css("position","fixed");
